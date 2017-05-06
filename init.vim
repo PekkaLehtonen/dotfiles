@@ -1,5 +1,7 @@
 syntax enable
-:let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
+
+" Disable cursorshaping
+set guicursor=
 
 call plug#begin()
 	Plug 'tpope/vim-fugitive'
