@@ -1,0 +1,7 @@
+# Enable history search
+
+"\e[A":history-search-backward 
+"\e[B":history-search-forward 
+
+# Set bell to visible
+set bell-style none
