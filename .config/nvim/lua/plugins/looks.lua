@@ -8,4 +8,9 @@ return {
 			vim.cmd([[colorscheme tokyonight-storm]])
 		end,
 	},
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		lazy = false,
+	}
 }
