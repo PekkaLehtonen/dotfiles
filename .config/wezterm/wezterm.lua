@@ -6,9 +6,10 @@ config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 16
 
 config.enable_tab_bar = false
-config.window_background_opacity = 0.7
+config.window_background_opacity = 0.8
 
 config.color_scheme = "tokyonight-storm"
+config.macos_window_background_blur = 15
 
 -- Keybindings
 config.keys = {}
