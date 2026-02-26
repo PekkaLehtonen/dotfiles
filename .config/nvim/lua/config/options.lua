@@ -1,3 +1,6 @@
+--nerdfont
+vim.g.have_nerd_font = true
+
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 vim.o.expandtab = true
@@ -49,3 +52,10 @@ vim.o.wrap = false
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
+-- folds
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldtext = ''
+-- first level of fold is syntax highlighted
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 1
