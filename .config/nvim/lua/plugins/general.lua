@@ -16,5 +16,6 @@ return {
                 desc = "Buffer Local Keymaps (which-key)",
             },
         },
-    }
+    },
+    { "tpope/vim-fugitive" },
 }
