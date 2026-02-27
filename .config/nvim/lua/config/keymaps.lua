@@ -27,5 +27,5 @@ vim.keymap.set({ "n", "x" }, "<leader>y", "\"+y", { desc = "Yank to clipboard" }
 vim.keymap.set("n", "<leader>Y", "\"+Y", { desc = "Yank to clipboard" })
 
 -- leader s to replace word under cursor in the whole buffer
-vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
+vim.keymap.set("n", "<leader>c", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]],
     { desc = "Replace word under cursor in whole buffer" })
