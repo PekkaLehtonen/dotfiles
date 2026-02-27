@@ -15,14 +15,14 @@ config.macos_window_background_blur = 15
 config.keys = {}
 -- Pane management
 for _, v in ipairs({
-	{"Enter", act.SplitHorizontal{domain='CurrentPaneDomain'}},
-	{"w", act.CloseCurrentPane{confirm=true}},
-	{"j", act.ActivatePaneDirection'Down'},
-	{"k", act.ActivatePaneDirection'Up'},
-	{"h", act.ActivatePaneDirection'Left'},
-	{"l", act.ActivatePaneDirection'Right'},
-}) do table.insert(config.keys, {mods="ALT", key=v[1], action=v[2]}) end
+    { "Enter", act.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+    { "w",     act.CloseCurrentPane { confirm = true } },
+    { "j",     act.ActivatePaneDirection 'Down' },
+    { "k",     act.ActivatePaneDirection 'Up' },
+    { "h",     act.ActivatePaneDirection 'Left' },
+    { "l",     act.ActivatePaneDirection 'Right' },
+}) do table.insert(config.keys, { mods = "ALT", key = v[1], action = v[2] }) end
 
-table.insert(config.keys, {mods="ALT|SHIFT", key="Enter", action=act.SplitVertical{domain="CurrentPaneDomain"}})
+table.insert(config.keys, { mods = "ALT|SHIFT", key = "Enter", action = act.SplitVertical { domain = "CurrentPaneDomain" } })
 
 return config
