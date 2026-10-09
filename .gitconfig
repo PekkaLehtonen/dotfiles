@@ -1,0 +1,5 @@
+[user]
+	name = Pekka Lehtonen
+	email = pekkasakari.lehtonen@gmail.com
+[core]
+	editor = nvim
